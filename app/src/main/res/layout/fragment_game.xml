@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="@drawable/game_bg"
+    tools:context=".GameFragment">
+
+    <TextView
+        android:id="@+id/txt_level"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Уровень"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/firstImg"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@color/black" />
+
+        <ImageView
+            android:id="@+id/secondImg"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:src="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/thirdImg"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@color/black"/>
+
+        <ImageView
+            android:id="@+id/fourIlm"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:src="@color/black"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/answer_ed"
+        android:layout_marginTop="12dp"
+        android:hint="Ответ"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/apply_btn"
+        android:textSize="22sp"
+        android:text="Принять"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/ic_help"
+        android:layout_marginLeft="270dp"
+        android:src="@drawable/ic_help_24"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>
